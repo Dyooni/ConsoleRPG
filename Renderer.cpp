@@ -25,7 +25,22 @@ void Renderer::Rendering(Player& player, Background& background) {
             if (y == player.get_y() && x == player.get_x())
                 std::cout << player.get_shape();
             else
-                std::cout << background.GetBackground(x, y);
+                std::cout << background.GetField(x, y);
+        }
+
+        if (y > 1 && y < background.Guide_Y() + 2) {
+            for (int x = 0; x < background.Guide_X(); x++) {
+                std::cout << background.GetGuide(x, y - 2);
+            }
+        }
+        std::cout << std::endl;
+    }
+}
+
+void Renderer::Rendering(Title& title) {
+    for (int y = 0; y < title.Length_Y(); y++) {
+        for (int x = 0; x < title.Length_X(); x++) {
+            std::cout << title.GetTitle(x, y);
         }
         std::cout << std::endl;
     }

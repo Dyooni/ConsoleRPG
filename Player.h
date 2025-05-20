@@ -11,10 +11,10 @@ public:
     void MoveUp(int n);
     void MoveDown(int n);
 
-    int get_x();
-    int get_y();
+    int get_x() const;
+    int get_y() const;
 
-    char get_shape();
+    char get_shape() const;
 
 private:
     int x, y;

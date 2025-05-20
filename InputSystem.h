@@ -12,6 +12,8 @@ public:
     bool W();
     bool S();
     bool Q();
+    bool num1();
+    bool num2();
 
 private:
     char input;

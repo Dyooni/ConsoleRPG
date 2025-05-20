@@ -76,3 +76,25 @@ bool InputSystem::Q() {
     else
         return false;
 }
+
+bool InputSystem::num1() {
+    Input();
+
+    if (input == '1') {
+        input = NULL;
+        return true;
+    }
+    else
+        return false;
+}
+
+bool InputSystem::num2() {
+    Input();
+
+    if (input == '2') {
+        input = NULL;
+        return true;
+    }
+    else
+        return false;
+}

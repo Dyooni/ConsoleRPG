@@ -28,14 +28,14 @@ void Player::MoveDown(int n) {
     y += n;
 }
 
-int Player::get_x() {
+int Player::get_x() const {
     return x;
 }
 
-int Player::get_y() {
+int Player::get_y() const {
     return y;
 }
 
-char Player::get_shape() {
+char Player::get_shape() const {
     return shape;
 }

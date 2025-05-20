@@ -3,7 +3,7 @@
 int main() {
     GameManager gameManager;
 
-    gameManager.GameLoop();
+    gameManager.MainTitle();
 
     return 0;
 }
