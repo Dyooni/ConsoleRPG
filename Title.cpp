@@ -11,3 +11,19 @@ int Title::Length_X() const {
 int Title::Length_Y() const {
     return HEIGHT / 2 + 1;
 }
+
+char Title::GetCursor() const {
+    return cursor.image;
+}
+
+int Title::CursorX() const {
+    return cursor.x;
+}
+
+int Title::CursorY() const {
+    return cursor.y;
+}
+
+void Title::MoveCursor(int y) {
+    cursor.y = y;
+}

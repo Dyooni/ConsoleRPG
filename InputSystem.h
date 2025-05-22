@@ -12,8 +12,14 @@ public:
     bool W();
     bool S();
     bool Q();
-    bool num1();
-    bool num2();
+    bool Enter();
+    bool Space();
+    bool Up();
+    bool Down();
+    bool Right();
+    bool Left();
+    
+    void InputArrow();
 
 private:
     char input;

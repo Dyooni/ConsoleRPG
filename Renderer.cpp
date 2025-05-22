@@ -40,7 +40,10 @@ void Renderer::Rendering(Player& player, Background& background) {
 void Renderer::Rendering(Title& title) {
     for (int y = 0; y < title.Length_Y(); y++) {
         for (int x = 0; x < title.Length_X(); x++) {
-            std::cout << title.GetTitle(x, y);
+            if (y == title.CursorY() && x == title.CursorX())
+                std::cout << title.GetCursor();
+            else
+                std::cout << title.GetTitle(x, y);
         }
         std::cout << std::endl;
     }

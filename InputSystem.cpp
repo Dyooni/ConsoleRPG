@@ -77,10 +77,10 @@ bool InputSystem::Q() {
         return false;
 }
 
-bool InputSystem::num1() {
+bool InputSystem::Enter() {
     Input();
 
-    if (input == '1') {
+    if (input == '\n') {
         input = NULL;
         return true;
     }
@@ -88,13 +88,66 @@ bool InputSystem::num1() {
         return false;
 }
 
-bool InputSystem::num2() {
+bool InputSystem::Space() {
     Input();
 
-    if (input == '2') {
+    if (input == ' ') {
         input = NULL;
         return true;
     }
     else
         return false;
+}
+
+void InputSystem::InputArrow() {
+    Input();
+    if (input == 27) {
+        Input();
+        if (input == '[')
+            Input();
+    }
+}
+
+bool InputSystem::Up() {
+    InputArrow();
+
+    if (input == 'A') {
+        input = NULL;
+        return true;
+    }
+
+    return false;
+}
+
+bool InputSystem::Down() {
+    InputArrow();
+
+    if (input == 'B') {
+        input = NULL;
+        return true;
+    }
+
+    return false;
+}
+
+bool InputSystem::Right() {
+    InputArrow();
+
+    if (input == 'C') {
+        input = NULL;
+        return true;
+    }
+
+    return false;
+}
+
+bool InputSystem::Left() {
+    InputArrow();
+
+    if (input == 'D') {
+        input = NULL;
+        return true;
+    }
+
+    return false;
 }
