@@ -27,3 +27,15 @@ int Title::CursorY() const {
 void Title::MoveCursor(int y) {
     cursor.y = y;
 }
+
+char Title::GetGuide(int x, int y) {
+    return background.GetGuide(x, y);
+}
+
+int Title::GuideX() {
+    return background.Guide_X();
+}
+
+int Title::GuideY() {
+    return background.Guide_Y();
+}

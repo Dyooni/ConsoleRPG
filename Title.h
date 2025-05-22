@@ -19,6 +19,10 @@ public:
     int CursorX() const;
     int CursorY() const;
 
+    char GetGuide(int x, int y);
+    int GuideX();
+    int GuideY();
+
 private:
     char title[HEIGHT / 2 + 1][WIDTH + 1] = {
         "########################################",
@@ -35,4 +39,5 @@ private:
     };
 
     Cursor cursor;
+    Background background;
 };

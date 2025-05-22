@@ -33,17 +33,20 @@ class Background {
     };
 
     struct Guide {
-        char image[6][17 + 1] = {
-            " KEY GUIDE       ",
-            " A : MOVE LEFT   ",
-            " D : MOVE RIGHT  ",
-            " W : MOVE UP     ",
-            " S : MOVE DOWN   ",
-            " Q : RETURN TITLE"
+        char image[5][18 + 1] = {
+            " KEY GUIDE        ",
+            " Move : ARROW KEYS",
+            " Select : ENTER   ",
+            "          SPACE   ",
+            // " A : MOVE LEFT   ",
+            // " D : MOVE RIGHT  ",
+            // " W : MOVE UP     ",
+            // " S : MOVE DOWN   ",
+            " Return Title : Q "
         };
 
-        int x = 17;
-        int y = 6;
+        int x = 18;
+        int y = 5;
     };
 
 public:

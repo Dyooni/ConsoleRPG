@@ -7,10 +7,10 @@ public:
 
     void Input();
 
-    bool A();
-    bool D();
-    bool W();
-    bool S();
+    // bool A();
+    // bool D();
+    // bool W();
+    // bool S();
     bool Q();
     bool Enter();
     bool Space();

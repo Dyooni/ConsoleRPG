@@ -45,6 +45,12 @@ void Renderer::Rendering(Title& title) {
             else
                 std::cout << title.GetTitle(x, y);
         }
+
+        if (y > 1 && y < title.GuideY() + 1) {
+            for (int x = 0; x < title.GuideX(); x++) {
+                std::cout << title.GetGuide(x, y - 2);
+            }
+        }
         std::cout << std::endl;
     }
 }

@@ -22,49 +22,49 @@ void InputSystem::Input() {
     }
 }
 
-bool InputSystem::A() {
-    Input();
+// bool InputSystem::A() {
+//     Input();
 
-    if (input == 'a') {
-        input = NULL;
-        return true;
-    }
-    else
-        return false;
-}
+//     if (input == 'a') {
+//         input = NULL;
+//         return true;
+//     }
+//     else
+//         return false;
+// }
 
-bool InputSystem::D() {
-    Input();
+// bool InputSystem::D() {
+//     Input();
 
-    if (input == 'd') {
-        input = NULL;
-        return true;
-    }
-    else
-        return false;
-}
+//     if (input == 'd') {
+//         input = NULL;
+//         return true;
+//     }
+//     else
+//         return false;
+// }
 
-bool InputSystem::W() {
-    Input();
+// bool InputSystem::W() {
+//     Input();
 
-    if (input == 'w') {
-        input = NULL;
-        return true;
-    }
-    else
-        return false;
-}
+//     if (input == 'w') {
+//         input = NULL;
+//         return true;
+//     }
+//     else
+//         return false;
+// }
 
-bool InputSystem::S() {
-    Input();
+// bool InputSystem::S() {
+//     Input();
 
-    if (input == 's') {
-        input = NULL;
-        return true;
-    }
-    else
-        return false;
-}
+//     if (input == 's') {
+//         input = NULL;
+//         return true;
+//     }
+//     else
+//         return false;
+// }
 
 bool InputSystem::Q() {
     Input();
