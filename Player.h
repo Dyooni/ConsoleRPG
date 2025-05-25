@@ -18,5 +18,5 @@ public:
 
 private:
     int x, y;
-    char shape;
+    const char shape = 'O';
 };

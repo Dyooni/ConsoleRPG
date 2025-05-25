@@ -4,7 +4,6 @@
 Player::Player() {
     x = WIDTH / 2;
     y = HEIGHT / 2;
-    shape = 'O';
 }
 
 void Player::SetPosition(int x, int y) {

@@ -35,6 +35,8 @@ void GameManager::MainTitle() {
 void GameManager::GameLoop() {
     renderer.SetupTerminal();
 
+    monsterSpawner.SetPosition();
+
     while (true) {
         renderer.ConsoleClear();
 
@@ -42,20 +44,20 @@ void GameManager::GameLoop() {
             if (background.GetField(player.get_x() - 2, player.get_y()) == '#')
                 player.MoveLeft(1);
             else
-                player.MoveLeft(2);
+                player.MoveLeft(1);
         }
         else if (input.Right() && background.GetField(player.get_x() + 1, player.get_y()) != '#') {
             if (background.GetField(player.get_x() + 2, player.get_y()) == '#')
                 player.MoveRight(1);
             else
-                player.MoveRight(2);
+                player.MoveRight(1);
         }
         else if (input.Up() && background.GetField(player.get_x(), player.get_y() - 1) != '#') player.MoveUp(1);
         else if (input.Down() && background.GetField(player.get_x(), player.get_y() + 1) != '#') player.MoveDown(1);
 
         if (input.Q()) break;
 
-        renderer.Rendering(player, background);
+        renderer.Rendering(player, background, monsterSpawner);
         usleep(50000);
     }
 }

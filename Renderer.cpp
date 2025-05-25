@@ -5,6 +5,8 @@
 #include <termios.h>
 #include <fcntl.h>
 
+#include "MonsterSpawner.h"
+
 void Renderer::SetupTerminal() {
     struct termios newt;
     tcgetattr(STDIN_FILENO, &newt);
@@ -19,11 +21,13 @@ void Renderer::ConsoleClear() {
     system("clear");
 }
 
-void Renderer::Rendering(Player& player, Background& background) {
+void Renderer::Rendering(Player& player, Background& background, MonsterSpawner& monsterSpawner) {
     for (int y = 0; y < HEIGHT; y++) {
         for (int x = 0; x < WIDTH; x++) {
             if (y == player.get_y() && x == player.get_x())
                 std::cout << player.get_shape();
+            else if (monsterSpawner.CurrentPosition(x, y))
+                std::cout << monsterSpawner.GetMonster();
             else
                 std::cout << background.GetField(x, y);
         }
