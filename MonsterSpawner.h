@@ -20,6 +20,6 @@ public:
 
 private:
     Monster* monsters;
-    const int count = 5;
+    const int count = 20;
     int current;
 };

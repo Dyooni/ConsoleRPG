@@ -33,16 +33,49 @@ void InputSystem::Input() {
 //         return false;
 // }
 
-// bool InputSystem::D() {
-//     Input();
+bool InputSystem::D() {
+    Input();
 
-//     if (input == 'd') {
-//         input = NULL;
-//         return true;
-//     }
-//     else
-//         return false;
-// }
+    if (input == 'd') {
+        input = NULL;
+        return true;
+    }
+    else
+        return false;
+}
+
+bool InputSystem::H() {
+    Input();
+
+    if (input == 'h') {
+        input = NULL;
+        return true;
+    }
+    else
+        return false;
+}
+
+bool InputSystem::E() {
+    Input();
+
+    if (input == 'e') {
+        input = NULL;
+        return true;
+    }
+    else
+        return false;
+}
+
+bool InputSystem::M() {
+    Input();
+
+    if (input == 'm') {
+        input = NULL;
+        return true;
+    }
+    else
+        return false;
+}
 
 // bool InputSystem::W() {
 //     Input();
@@ -55,16 +88,16 @@ void InputSystem::Input() {
 //         return false;
 // }
 
-// bool InputSystem::S() {
-//     Input();
+bool InputSystem::S() {
+    Input();
 
-//     if (input == 's') {
-//         input = NULL;
-//         return true;
-//     }
-//     else
-//         return false;
-// }
+    if (input == 's') {
+        input = NULL;
+        return true;
+    }
+    else
+        return false;
+}
 
 bool InputSystem::Q() {
     Input();

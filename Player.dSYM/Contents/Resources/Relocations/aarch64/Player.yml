@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/dyooni/Code/C++/Game/ConsoleRPG/main'
+binary-path:     '/Users/dyooni/Code/C++/Game/ConsoleRPG/Player'
 relocations:     []
 ...

@@ -33,9 +33,9 @@ char Title::GetGuide(int x, int y) {
 }
 
 int Title::GuideX() {
-    return background.Guide_X();
+    return background.GuideX();
 }
 
 int Title::GuideY() {
-    return background.Guide_Y();
+    return background.GuideY();
 }
