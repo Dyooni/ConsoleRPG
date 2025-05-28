@@ -22,17 +22,6 @@ void InputSystem::Input() {
     }
 }
 
-// bool InputSystem::A() {
-//     Input();
-
-//     if (input == 'a') {
-//         input = NULL;
-//         return true;
-//     }
-//     else
-//         return false;
-// }
-
 bool InputSystem::D() {
     Input();
 
@@ -76,17 +65,6 @@ bool InputSystem::M() {
     else
         return false;
 }
-
-// bool InputSystem::W() {
-//     Input();
-
-//     if (input == 'w') {
-//         input = NULL;
-//         return true;
-//     }
-//     else
-//         return false;
-// }
 
 bool InputSystem::S() {
     Input();

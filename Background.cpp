@@ -14,10 +14,6 @@ char Background::GetGuide(int x, int y) const {
     return guide.image[y][x];
 }
 
-// char Background::GetStatus(int x, int y) const {
-//     return status.image[y][x];
-// }
-
 char Background::Wall() const {
     return wall;
 }

@@ -7,12 +7,11 @@ public:
 
     void Input();
 
-    // bool A();
     bool D();
     bool H();
     bool E();
     bool M();
-    // bool W();
+    
     bool S();
     bool Q();
     bool Enter();

@@ -100,7 +100,6 @@ public:
     char GetVillage(int x, int y) const;
     char GetField(int x, int y) const;
     char GetGuide(int x, int y) const;
-    // char GetStatus(int x, int y) const;
 
     char Wall() const;
 

@@ -53,9 +53,10 @@ void SceneManager::Village() {
 
         if (input.S()) turnStatus = (turnStatus + 1) % 2;
 
-        // if (input.D()) player.TakeDamage(200);
-        // if (input.E()) player.GainExp(5000);
-        // if (input.H()) player.GetHealed(100);
+        // Test
+        if (input.D()) player.TakeDamage(200);
+        if (input.E()) player.GainExp(5000);
+        if (input.H()) player.GetHealed(100);
 
         renderer.Rendering(player, background, turnStatus);
         usleep(50000);
@@ -87,9 +88,10 @@ void SceneManager::Field() {
 
         if (input.S()) turnStatus = (turnStatus + 1) % 2;
 
-        // if (input.D()) player.TakeDamage(200);
-        // if (input.E()) player.GainExp(5000);
-        // if (input.H()) player.GetHealed(100);
+        // Test
+        if (input.D()) player.TakeDamage(200);
+        if (input.E()) player.GainExp(5000);
+        if (input.H()) player.GetHealed(100);
 
         renderer.Rendering(player, background, monsterSpawner, turnStatus);
         usleep(50000);

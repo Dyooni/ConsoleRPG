@@ -32,18 +32,10 @@ void Renderer::RenderingGuide(Background& background, int y) {
 void Renderer::RenderingStatus(Player& player, Background& background, int y) {
     if (y > 1 && y < background.StatusY() + 2) {
         background.PrintStatus(player, y - 2);
-
-        // for (int x = 0; x <= background.StatusX(); x++) {
-        //     if (x < background.StatusX())
-        //         std::cout << background.GetStatus(x, y - 2);
-        //     else {
-
-        //     }
-        // }
     }
 }
 
-void Renderer::Rendering(Player& player, Background& background, MonsterSpawner& monsterSpawner, int turnState) {
+void Renderer::Rendering(Player& player, Background& background, MonsterSpawner& monsterSpawner, int turnStatus) {
     for (int y = 0; y < HEIGHT; y++) {
         for (int x = 0; x < WIDTH; x++) {
             if (y == player.Y() && x == player.X())
@@ -54,18 +46,14 @@ void Renderer::Rendering(Player& player, Background& background, MonsterSpawner&
                 std::cout << background.GetField(x, y);
         }
 
-        if (turnState == 0) RenderingGuide(background, y);
-        else if (turnState == 1) RenderingStatus(player, background, y);
-        // if (y > 1 && y < background.GuideY() + 2) {
-        //     for (int x = 0; x < background.GuideX(); x++) {
-        //         std::cout << background.GetGuide(x, y - 2);
-        //     }
-        // }
+        if (turnStatus == 0) RenderingGuide(background, y);
+        else if (turnStatus == 1) RenderingStatus(player, background, y);
+
         std::cout << std::endl;
     }
 }
 
-void Renderer::Rendering(Player& player, Background& background, int turnState) {
+void Renderer::Rendering(Player& player, Background& background, int turnStatus) {
     for (int y = 0; y < HEIGHT; y++) {
         for (int x = 0; x < WIDTH; x++) {
             if (y == player.Y() && x == player.X())
@@ -74,13 +62,9 @@ void Renderer::Rendering(Player& player, Background& background, int turnState) 
                 std::cout << background.GetVillage(x, y);
         }
 
-        if (turnState == 0) RenderingGuide(background, y);
-        else if (turnState == 1) RenderingStatus(player, background, y);
-        // if (y > 1 && y < background.GuideY() + 2) {
-        //     for (int x = 0; x < background.GuideX(); x++) {
-        //         std::cout << background.GetGuide(x, y - 2);
-        //     }
-        // }
+        if (turnStatus == 0) RenderingGuide(background, y);
+        else if (turnStatus == 1) RenderingStatus(player, background, y);
+
         std::cout << std::endl;
     }
 }

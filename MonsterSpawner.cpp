@@ -18,7 +18,7 @@ void MonsterSpawner::RandomPosition(int i) {
 
     Background background;
 
-    if (background.IsWall_Field(new_x, new_y) /* background.GetField(new_x, new_y) == background.Wall() */)
+    if (background.IsWall_Field(new_x, new_y))
         return;
 
     monsters[i].SetPosision(new_x, new_y);
